@@ -48,3 +48,28 @@ roshan_portfolio/
 └── assets/
     └── Roshan_Jha_Resume.pdf
 ```
+
+# Next Version :- 
+
+1. Interactive advisor preview
+
+2. Spam detection demonstration
+
+3. Loan prediction demonstration
+
+4. Project architecture sections
+
+5. Animated visual effects
+
+6. Mobile-responsive layout
+
+7. Resume download
+
+8. Render deployment configuration
+
+- Run locally first
+- pip install -r requirements.txt
+- streamlit run app.py
+
+
+![alt text](image.png)
