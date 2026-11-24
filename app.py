@@ -271,7 +271,7 @@ st.markdown("""
 
 st.write("")
 metrics = st.columns(4)
-for col, value, label in zip(metrics, ["3+", "4", "2", "E2E"], ["Years across software & data roles", "Featured ML / AI projects", "Mentoring experiences", "Build · Evaluate · Deploy"]):
+for col, value, label in zip(metrics, ["4+", "4", "2", "E2E"], ["Years across software & data roles", "Featured ML / AI projects", "Mentoring experiences", "Build · Evaluate · Deploy"]):
     with col:
         st.markdown(f'<div class="metric"><strong>{value}</strong><span>{label}</span></div>', unsafe_allow_html=True)
 
