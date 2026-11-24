@@ -230,6 +230,7 @@ header,#MainMenu,footer{visibility:hidden}
 .timeline-item{position:relative;margin-bottom:1.3rem}
 .timeline-item:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);left:-1.53rem;top:.4rem;box-shadow:0 0 0 4px rgba(110,231,224,.1)}
 .contact{padding:1.6rem;border-radius:20px;border:1px solid rgba(110,231,224,.2);background:linear-gradient(120deg,rgba(24,47,64,.8),rgba(35,29,66,.8))}
+.social{padding:1.6rem;border-radius:18px;border:2px dashed rgba(110,231,224,0.2);background:linear-gradient(120deg,rgba(24,47,64,.8),rgba(35,29,66,.8))}
 .stButton>button,.stDownloadButton>button{border-radius:999px;border:1px solid rgba(110,231,224,.45);background:linear-gradient(90deg,#5bd8d0,#9e8cf4);color:#07111d;font-weight:700;padding:.5rem 1rem}
 div[data-testid="stExpander"]{border:1px solid rgba(255,255,255,.12);border-radius:14px}
 @media(max-width:700px){.hero{padding:2rem 1.3rem}.block-container{padding-left:1rem;padding-right:1rem}.hero h1{font-size:2.55rem}}
@@ -399,13 +400,37 @@ with edu2:
 st.write("")
 section("06 / Let's connect", "Have a problem worth solving?", "I'm interested in opportunities and conversations around Data Science, Machine Learning, and AI engineering.", "contact")
 st.markdown("""<div class="contact"><h3>Let’s build something useful.</h3><p class="subtle">Reach out for roles, collaborations, or conversations about applied AI.</p></div>""", unsafe_allow_html=True)
-c1, c2, c3 = st.columns(3)
+c1, c2, c3 ,c4= st.columns(4)
 with c1:
     st.markdown("**Email**  \n[jroshan731@gmail.com](mailto:jroshan731@gmail.com)")
 with c2:
     st.markdown("**LinkedIn**  \n[roshan-jha-tech](https://www.linkedin.com/in/roshan-jha-tech)")
 with c3:
     st.markdown("**GitHub profile**  \n[jroshanjha](https://github.com/jroshanjha)")
+# Portfolio
+with c4:
+    st.markdown("**Portfolio**  \n[jroshanjha]( https://jroshanjha.bio.link/)")
+    
+# Social Media Link :- ( Youtube , Instagram , What's app community , Telegram )
+st.write("")
+# Social Media Link 
+section("07 / Social Media Link", "Social Media", "Connect with me on social media.", "social")
+st.markdown("""<div class="social"><h3>Social Media</h3><p class="subtle">Connect with me on social media.</p></div>""", unsafe_allow_html=True)
+# st.write("")
+c1,c2,c3,c4 = st.columns(4)
+with c1:
+    st.markdown("**Youtube**  \n[Tech Jrosahn](https://www.youtube.com/@tech_jroshan)")
+with c2:
+    st.markdown("**Instagram**  \n[Tech Jroshan](https://www.instagram.com/tech_jroshan/)")
+with c3:
+    st.markdown("**WhatsApp community**  \n[Tech Jroshan](https://whatsapp.com/channel/0029Va53iL3D8SE74GZFsz3i)")
+
+with c4:
+    st.markdown("**Telegram**  \n[Tech Jroshan](https://t.me/techjroshan⁠)")
+# section("07 / Portfolio", "Projects", "Here are some of the projects I've worked on.", "portfolio")
+# st.markdown("""<div class="portfolio"><h3>Projects</h3><p class="subtle">Here are some of the projects I've worked on.</p></div>""", unsafe_allow_html=True)
+# st.write("")
+    
 
 if RESUME_PATH.exists():
     st.download_button("↓ Download my resume", data=RESUME_PATH.read_bytes(), file_name="Roshan_Jha_Resume.pdf", mime="application/pdf")
@@ -413,5 +438,8 @@ else:
     st.info("Add your resume PDF at assets/Roshan_Jha_Resume.pdf to enable the download button.")
 
 st.markdown("---")
-st.markdown('<p style="text-align:center;color:#8290a6;font-size:.82rem">Designed & built with Python + Streamlit · Roshan Jha</p>', unsafe_allow_html=True)
+# st.markdown('<p style="text-align:center;color:#8290a6;font-size:.82rem">Designed & built with Python + Streamlit · Roshan Jha</p>', unsafe_allow_html=True)
 
+st.markdown('<p style="text-align:center;color:#8290a6;font-size:.82rem">Designed & built with Tech Jroshan</p>', unsafe_allow_html=True)
+
+# Show Follow and  Subscribe icone
